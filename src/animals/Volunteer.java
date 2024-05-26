@@ -5,6 +5,6 @@ public class Volunteer extends Caretaker {
 
     @Override
     public void takeCare() {
-        System.out.println("Volunteer " + getFirstName() + " " + getLastName() + "is trating animals");
+        System.out.println("Volunteer " + getFirstName() + " " + getLastName() + " is trating animals");
     }
 }
