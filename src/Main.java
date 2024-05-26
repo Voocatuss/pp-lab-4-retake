@@ -56,6 +56,24 @@ public class Main {
         shelter.displayCaretakers();
 
 
+        for(int i=0; i<20; i++){
+            shelter.addAnimal(new Animal());
+        }
 
+
+        for(int i=22; i>=0; i--){
+            shelter.removeAnimals(i);
+        }
+
+        for(int i=3; i>=0; i--){
+            shelter.removeCaretaker(i);
+        }
+
+        System.out.println(shelter.getAdoptedAnimals()+" has been adopted");
+        System.out.println(shelter.getDeadAnimals()+" has died because of ilness or age");
+        System.out.println(shelter.getFiredCaretakers()+" has decided to leave");
+
+        shelter.displayAnimals();
+        shelter.displayCaretakers();
     }
 }
